@@ -1,0 +1,9 @@
+#buttons>.addButton>a {
+    font-size: 6em;
+    color: blue;
+}
+
+#buttons>.delButton>a {
+    font-size: 6em;
+    color: red;
+}

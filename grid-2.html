@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid-2.css">
+
+    <title>Test Bootstrap 4 grid. Add/remove blocks.</title>
+</head>
+
+<body>
+    <div id="container" class="container-fluid">
+
+        <div id="header" class="row bg-secondary text-white p-3">
+            Test Bootstrap 4 grid
+        </div>
+
+        <div id="main" class="row justify-content-center">
+        </div>
+
+        <div id="buttons" class="d-flex flex-row-reverse">
+            <div id="add" class="addButton"><a href="#" class="text-decoration-none"
+                    onclick="return addClick();">&#10010;</a></div>
+            <div id="delete" class="delButton invisible"><a href="#" class="text-decoration-none"
+                    onclick="return deleteClick();">&#10008;</a></div>
+        </div>
+
+        <div id="footer" class="row bg-secondary">
+            <div class="col-12">
+                <div class="d-flex text-white py-3">
+                    <div class="flex-grow-1">Click "Plus" to add new block. Click block to select it.
+                        Click red cross to delete selected blocks.
+                    </div>
+                    <div>Selected: <span id="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/grid-2.js"></script>
+</body>
+
+</html>
